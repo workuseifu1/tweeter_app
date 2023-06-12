@@ -1,0 +1,28 @@
+.header-img {
+  height: 400px;
+  width: 100%;
+  background-color: olive;
+  background-image: url(http://www.transparenttextures.com/patterns/argyle.png);
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;   
+}
+.avatar-img {  
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+  margin-top: 120px;
+  margin-bottom: 20px; 
+}
+.user-name {
+color: #080707;
+margin-top: 0;
+display: flex;
+justify-content:center;
+font-size: 24px;
+margin-bottom: 20px;
+}
