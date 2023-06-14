@@ -1,17 +1,26 @@
-nav  {
+
+body {
+  margin: 0;
+}
+
+#nav {
   display: flex;
-  justify-content:space-between;
-  align-items:center;
+  flex-direction: row;
+  justify-content: space-between;
   position: fixed;
+  background-color: #4056a1;
   height: 120px;
-  background-color: #4056a1;    
-  padding: 0 1.5em;
-  z-index: 100;  
   color: #ffffff;
+  padding: 0 1.5em;
   width:100%;
-  
-} 
-.navTweeter {
+}
+
+#nav .left {
+  display: flex;
+  font-family: 'Bungee', cursive;
+}
+
+#nav .right {
   display: flex;
   flex-direction: column;
   justify-content: center;  
@@ -19,19 +28,9 @@ nav  {
   margin-top: 40px;
   font-family: 'Roboto', sans-serif;
 }
-.logo {
-  font-family: 'Bungee', cursive;  
-  margin-top: 40px;
-}
-.newTweet {
-  display: flex;
-  /* justify-content: center;  
-  align-items: center; */
-  
-}
 .bold {
   font-weight: bold;
 }
 .fa-solid {  
   color: red;  
-} 
+}

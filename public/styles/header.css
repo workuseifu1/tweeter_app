@@ -1,28 +1,29 @@
-.header-img {
-  height: 400px;
-  width: 100%;
-  background-color: olive;
-  background-image: url(http://www.transparenttextures.com/patterns/argyle.png);
-}
-
-.background {
+ .header-img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 400px;
+  width: 100%;
+  background-color: #f4f1ec;
+  background-image: url(http://www.transparenttextures.com/patterns/argyle.png);
+  padding: 0 35px;
+}
+
+.background {
+  display: flex;  
   flex-direction: column;   
 }
 .avatar-img {  
   display: flex;
-  align-items: center; 
-  flex-direction: column;
-  margin-top: 120px;
-  margin-bottom: 20px; 
+  justify-content: center; 
+  align-items: center;  
+  padding-top: 200px;
+  padding-bottom: 0;
+  height: 80%;
 }
 .user-name {
 color: #080707;
-margin-top: 0;
-display: flex;
-justify-content:center;
-font-size: 24px;
-margin-bottom: 20px;
+padding-top: 0;
+height: auto;
 }
