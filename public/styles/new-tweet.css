@@ -16,11 +16,21 @@ textarea {
   margin-top: 20px;
 }
 .counter {
-  color:blue;
+  color:rgb(10, 10, 10);
   
 }
 .counter1 {
   color:red;
+}
+#empty-tweet {
+  margin-top: 4px;
+  border: red 3px solid;
+  color: red;
+}
+#long-tweet {
+  margin-top: 4px;
+  border: red 3px solid;
+  color: red;
 }
 button {
   font-family: "Bungee";

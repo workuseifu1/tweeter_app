@@ -48,12 +48,12 @@ article footer {
 h5 {  
   margin-top:0;
 }
-#time {
+.tweet-container footer .time {
   margin-left: 1em;
   font-weight: bold;
 }
 
-#handle {
+.tweet-container .handle {
   font-weight: bold;
   opacity: 0.5;
   color: #4056A1;

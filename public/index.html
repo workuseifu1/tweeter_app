@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
     
     <!-- External JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
     <!-- App JS -->
@@ -53,14 +54,14 @@
         <img src="/images/profile-hex.png" />
       </div>
       <div class="user-name">
-        <h3>Your Name</h3>
+        <h2> <b>Your</b> Name</h2>
       </div>
     </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form Content-Type= "application/x-www-form-urlencoded" action="/tweets/" method="POST">
+        <div class="error-text"></div>
+        <form action="/tweets/" method="POST">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div class="tweet-counter">
@@ -69,26 +70,7 @@
           </div>
         </form>
       </section>
-      <section id="tweet-container">
-        <article>
-          <header>            
-            <i class="fa-sharp fa-regular fa-user"></i>
-            <h5>@heyyou</h5>
-          </header>
-          <body class="tweet-body">
-            choose a typeface? Many people—professional designers included—go through an app’s font menu until we find one we like. But the aim of this module is to show that there are many considerations that can improve our type choices. By setting some useful constraints to aid our type selection, we can also develop a critical eye for analyzing type along the way.
-          </body>
-          <footer>
-            <div id="time">
-              10days ago
-            </div>
-            <div id="handle" class="icons">
-              <i class="fa-sharp fas fa-solid fa-retweet"></i>
-              <i class="fa-sharp fas fa-solid fa-heart"></i>
-              <i class="fa-sharp fas fa-flag"></i>
-            </div>            
-          </footer>
-        </article>
+      <section  class="tweet-container">    
       </section>
     </main>    
   </body>

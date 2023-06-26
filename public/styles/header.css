@@ -3,27 +3,38 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 400px;
+  padding-top: 120px;
+  height: 520px;
   width: 100%;
-  background-color: #f4f1ec;
+  background-color: #eba800;
   background-image: url(http://www.transparenttextures.com/patterns/argyle.png);
-  padding: 0 35px;
+  
 }
 
-.background {
-  display: flex;  
-  flex-direction: column;   
+header h2 {
+  color: white;
+  font-size: 1.5em;
+  font-weight: normal;
 }
-.avatar-img {  
-  display: flex;
-  justify-content: center; 
-  align-items: center;  
-  padding-top: 200px;
-  padding-bottom: 0;
-  height: 80%;
-}
-.user-name {
-color: #080707;
-padding-top: 0;
-height: auto;
+
+@media all and (min-width: 1024px) {
+
+  .header-img {
+    margin-top: 200px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 45%;
+    height: 300px;
+    font-size: 75%;
+  }
+
+  .avatar-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .avatar-img img {
+    max-width: 60%;
+  }
+
 }
