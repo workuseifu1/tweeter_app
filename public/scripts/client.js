@@ -11,7 +11,7 @@ $(document).ready(function () {
     // loops through tweets
     // calls createTweetElement for each tweet
     // takes return value and appends it to the tweets container
-    $('#tweets-container').empty();
+    $('.tweet-container').empty();
     for (let val of tweets) {
       let $tweet = createTweetElement(val);
       $('.tweet-container').prepend($tweet);
