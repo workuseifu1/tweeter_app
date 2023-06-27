@@ -30,11 +30,15 @@ article footer {
   border-top: #545149 solid;
   padding-top: 1%;
 }
+.tweet:hover {
+  box-shadow: 5px 5px 5px black;
+}
 .tweet-body{
+  overflow-wrap: break-word;
   height: 2.5em;
   margin-top: 0.5em;
   margin-left: 1em;
-  overflow: scroll;  
+  /* overflow: scroll;   */
 }
 
 .icons  .fa-sharp{

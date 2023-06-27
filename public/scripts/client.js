@@ -5,12 +5,13 @@
  */
 
 $(document).ready(function () {
-  
+
 
   const renderTweets = function (tweets) {
     // loops through tweets
     // calls createTweetElement for each tweet
     // takes return value and appends it to the tweets container
+    $('#tweets-container').empty();
     for (let val of tweets) {
       let $tweet = createTweetElement(val);
       $('.tweet-container').prepend($tweet);
@@ -23,12 +24,12 @@ $(document).ready(function () {
     <div id="name"><img src=${tweet.user.avatars}>${tweet.user.name}</div>
     <div id="handle">${tweet.user.handle}</div>
   </header>
-  <body class="tweet-body"> 
+  <div class="tweet-body"> 
   ${escape(tweet.content.text)}
-  </body>
+  </div>
   <footer>
     <div class="time">
-    ${timeago.format(tweet.created_at)}
+    ${timeago.format(new Date(tweet.created_at))}
     </div>
     <div class="icons">
       <i class="fa-sharp fas fa-solid fa-retweet"></i>
@@ -58,7 +59,7 @@ $(document).ready(function () {
       $(".error-text").html(errMsg).hide().slideDown();
       return;
     }
-    if ($('.counter').val() < 0) { 
+    if ($('.counter').val() < 0) {
       let errMsg = '<div id="long-tweet">Cannot post more than 140 characters! <i class="fas fa-exclamation-triangle"></i></div>';
       $(".error-text").html(errMsg).hide().slideDown();
       return;
@@ -67,11 +68,13 @@ $(document).ready(function () {
     $(".error-text").empty();
     $.ajax({ url: '/tweets/', method: 'POST', data: formData })
       .then(response => {
-        console.log("success");
         loadTweets();
+      })
+      .catch(err => {
+        $(".error-text").html("please try again").hide().slideDown();
       });
     $("#tweet-text").val("");
-    $(".counter").val(140);
+    $(".counter").val(140).removeClass("counter1");
     $("#tweet-text").focus()
   });
   loadTweets = function () {
