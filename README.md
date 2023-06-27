@@ -16,3 +16,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+!["Screenshot of tweet_app for big screen devices"](https://github.com/workuseifu1/tweeter_app/blob/master/docs/screenshot%20of%20tweet%20app%20for%20biger%20screen%20devices.png)
+!["Screenshot of tweet_app for small screen devices"](https://github.com/workuseifu1/tweeter_app/blob/master/docs/screenshot%20of%20tweet%20app%20for%20smaller%20devices.png)
+
