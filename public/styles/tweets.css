@@ -38,7 +38,8 @@ article footer {
   height: 2.5em;
   margin-top: 0.5em;
   margin-left: 1em;
-  /* overflow: scroll;   */
+  margin-bottom: 1em;
+  overflow: scroll;  
 }
 
 .icons  .fa-sharp{
